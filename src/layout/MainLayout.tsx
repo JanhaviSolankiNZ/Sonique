@@ -10,13 +10,12 @@ export const Layout = styled("div")({
   rowGap: "10px",
   columnGap: "10px",
   padding: "12px",
-  boxSizing: "border-box"
+  boxSizing: "border-box",
 });
 
 export const Header = styled("div")({
   gridColumn: "1 / -1",
 });
-
 
 export const SidebarWrapper = styled("div")({
   gridColumn: "1",
@@ -24,9 +23,18 @@ export const SidebarWrapper = styled("div")({
 });
 
 export const MainContent = styled("div")({
-    gridColumn: 2,
-    gridRow: 2,
-    overflowY: "auto"
+  gridColumn: 2,
+  gridRow: 2,
+  overflowY: "auto",
+  minHeight: 0,
+  padding: "12px",
+  boxSizing: "border-box",
+  background: "#121212",
+  borderRadius: "12px",
+  scrollBehavior: "smooth",
+  "&::-webkit-scrollbar": {
+    display: "none",
+  },
 });
 
 export const FooterWrapper = styled("div")({

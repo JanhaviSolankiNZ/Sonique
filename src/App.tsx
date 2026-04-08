@@ -1,12 +1,17 @@
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./pages/HomePage";
+import LandingPage from "./pages/LandingPage";
 import SignupPage from "./pages/SignupPage";
 import SigninPage from "./pages/SigninPage";
+import Dashboard from "./pages/Dashboard";
 
 const router = createBrowserRouter([
   {
-    element: <Home/>,
+    element: <Dashboard/>,
+    path: "/dashboard",
+  },
+  {
+    element: <LandingPage/>,
     path: "/",
   },
   {

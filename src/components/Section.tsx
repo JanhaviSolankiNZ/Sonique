@@ -9,7 +9,12 @@ const Wrapper = styled("div")({
 const Header = styled("div")({
     display: "flex",
     justifyContent: "space-between",
-    marginBottom: "16px"
+    marginBottom: "16px",
+    "& .showAll":{
+    color: "grey",
+    fontWeight: "bolder",
+    fontSize: "14px",
+    }
 });
 
 const Row = styled("div")({
@@ -21,12 +26,17 @@ const Row = styled("div")({
     }
 });
 
+const Title = styled(Typography)({
+    fontWeight: "bold",
+    fontSize: "30px"
+});
+
 const Section = ({title, children}: {title: string, children: React.ReactNode}) => {
   return (
     <Wrapper>
         <Header>
-            <Typography>{title}</Typography>
-            <span>Show all</span>
+            <Title>{title}</Title>
+            <Typography className='showAll'>Show all</Typography>
         </Header>
         <Row>
             {children}

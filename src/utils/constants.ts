@@ -1,0 +1,1 @@
+export const IMG_URL = "https://image2url.com/r2/default/images/1775620006817-ccc409e6-f5ee-4fc6-a1ac-313eb9a57efa.jpg"

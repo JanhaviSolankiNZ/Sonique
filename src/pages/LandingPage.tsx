@@ -9,7 +9,7 @@ import Footer from "../components/Footer";
 
 const dummyData = Array.from({ length: 10 });
 
-export default function Home() {
+export default function LandingPage() {
   return (
     <Layout>
       <Header>

@@ -45,6 +45,7 @@ const Right = styled("div")({
 });
 
 const Appbar = () => {
+  const isLoggedIn = true;
   return (
     <Container>
       <Left>
@@ -53,8 +54,11 @@ const Appbar = () => {
       </Left>
 
       <Right>
-        <Button variant="text">Sign up</Button>
+        {isLoggedIn ? <img />
+          :<>
+          <Button variant="text">Sign up</Button>
         <Button variant="contained" className="active">Log in</Button>
+        </>}
       </Right>
     </Container>
   );
